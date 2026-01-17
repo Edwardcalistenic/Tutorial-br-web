@@ -18,14 +18,14 @@ body {
     color: rgba(209, 10, 10, 0.904);
 }
 
-.banner-jogo {
+.banner-contra {
   width: 100%;
   height: 180px;
   background-color: #000;
   overflow: hidden;
 }
 
-.banner-jogo img {
+.banner-contra img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -39,17 +39,17 @@ body {
   padding: 1rem;
 }
 
-.dark--titulo {
+.contra--titulo {
   text-align: left;
   font-family: var(--fonte-primeiro);
 }
 
-.dark--texto {
+.contra--texto {
   font-family: var(--fonte-segundo);
   font-size: 1em;
 }
 
-.dark--img {
+.contra--img {
   margin-top: 1em;
   display: block;
   margin: auto;
@@ -58,51 +58,34 @@ body {
   width: 250px; 
 }
 
-.dark--titulo2 {
+.contra--titulo2 {
   text-align: center;
   font-family: var(--fonte-primeiro);
 }
 
-.dark--texto2 {
+.contra--texto2 {
   text-align: center;
   font-family: var(--fonte-segundo);
-}
-
-.dark--titulo3 {
-  text-align: left;
-  font-family: var(--fonte-primeiro);
-}
-
-.dark--lista {
-  display: flex;
-  flex-direction:row;
-  gap: 10px;
-}
-
-.dark-- {
-  text-decoration: none;
-  display: block;
-  margin: 0 auto;
-  font-family: var(--fonte-segundo);
-}
-
-.video-link {
-  display: flex;
-  justify-content: center;
-  margin-top: 1em;
 }
 
 .video-thumb {
-  cursor: pointer;
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  display: block;
+  margin: 0 auto 1.5rem auto;
+  border: 4px solid var(--cor-para-links2);
+  border-radius: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
 }
 
 .video-thumb:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 15px rgba(190, 56, 7, 0.7);
+  transform: scale(1.03);
+  box-shadow: 0 0 20px var(--cor-para-links2);
 }
 
-.dark--link {
+.contra--link{
   display: table;
   margin: 1em auto;
   justify-content: center;
@@ -121,7 +104,8 @@ body {
   font-family: var(--fonte-segundo);
 }
 
-.rodape--dark {
+
+.rodape--contra {
   background-color:rgb(18, 18, 19);
   color: rgba(209, 10, 10, 0.904);
   text-align: center;
@@ -130,68 +114,11 @@ body {
   font-family: var(--fonte-segundo);
 }
 
-.rodape--link--dark {
+.rodape--link--contra {
   background-color: rgb(122, 6, 6);
   color: rgb(231, 41, 41);
   border-radius: 7px;
   border: solid  rgb(190, 56, 7);
   text-decoration: none;
   font-family: var(--fonte-segundo);
-}
-
-
-@media (max-width: 768px) {
-
-  body {
-    padding: 0 10px;
-  }
-
-  .banner-jogo {
-    height: 120px;
-  }
-
-  .dark--img {
-    width: 100%;
-    max-width: 300px;
-  }
-
-  .dark--lista {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .dark--texto,
-  .dark--texto2 {
-    font-size: 0.95em;
-  }
-
-  .rodape--link--dark {
-    width: 80%;
-    font-size: 1rem;
-    padding: 12px;
-  }
-
-  /* Rodapé */
-  .rodape--dark {
-    font-size: 1.2rem;
-    padding: 1.5rem 1rem;
-  }
-
-  .rodape--link--dark {
-    display: inline-block;
-    margin-top: 0.8rem;
-    padding: 8px 16px;
-  }
-}
-
-
-
-
-
-
-
-@media (max-width: 768px) {
-  .banner-jogo {
-    height: 130px;
-  }
 }
