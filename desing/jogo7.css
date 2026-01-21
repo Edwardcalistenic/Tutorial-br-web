@@ -20,7 +20,7 @@ body {
 
 .banner-jogo {
   width: 100%;
-  height: 180px;
+  height: 280px;
   background-color: #000;
   overflow: hidden;
 }
@@ -39,17 +39,18 @@ body {
   padding: 1rem;
 }
 
-.dark--titulo {
+
+.demon--titulo {
   text-align: left;
   font-family: var(--fonte-primeiro);
 }
 
-.dark--texto {
+.demon--texto {
   font-family: var(--fonte-segundo);
   font-size: 1em;
 }
 
-.dark--img {
+.demon--img {
   margin-top: 1em;
   display: block;
   margin: auto;
@@ -58,28 +59,23 @@ body {
   width: 250px; 
 }
 
-.dark--titulo2 {
+.demon--titulo2 {
   text-align: center;
   font-family: var(--fonte-primeiro);
 }
 
-.dark--texto2 {
+.demon--texto2 {
   text-align: center;
   font-family: var(--fonte-segundo);
 }
 
-.dark--titulo3 {
-  text-align: left;
-  font-family: var(--fonte-primeiro);
-}
-
-.dark--lista {
+.lista--demon {
   display: flex;
   flex-direction:row;
   gap: 10px;
 }
 
-.dark-- {
+.demon-- {
   text-decoration: none;
   display: block;
   margin: 0 auto;
@@ -94,6 +90,8 @@ body {
 
 .video-thumb {
   cursor: pointer;
+  border: 3px solid #be3807; /* borda estilo Souls */
+  border-radius: 8px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -102,7 +100,7 @@ body {
   box-shadow: 0 0 15px rgba(190, 56, 7, 0.7);
 }
 
-.dark--link {
+.demon--link {
   display: table;
   margin: 1em auto;
   justify-content: center;
@@ -121,7 +119,7 @@ body {
   font-family: var(--fonte-segundo);
 }
 
-.rodape--dark {
+.rodape--demon {
   background-color:rgb(18, 18, 19);
   color: rgba(209, 10, 10, 0.904);
   text-align: center;
@@ -130,7 +128,7 @@ body {
   font-family: var(--fonte-segundo);
 }
 
-.rodape--link--dark {
+.rodape--link--demon {
   background-color: rgb(122, 6, 6);
   color: rgb(231, 41, 41);
   border-radius: 7px;
@@ -139,60 +137,54 @@ body {
   font-family: var(--fonte-segundo);
 }
 
-
-
-@media (max-width: 768px) {
-
-  body {
-    padding: 0 10px;
-  }
-
-  .banner-jogo {
-    height: 120px;
-  }
-
-  .dark--img {
-    width: 100%;
-    max-width: 300px;
-  }
-
-  .dark--lista {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .dark--texto,
-  .dark--texto2 {
-    font-size: 0.95em;
-  }
-
-  .rodape--link--dark {
-    width: 80%;
-    font-size: 1rem;
-    padding: 12px;
-  }
-
-  /* Rodapé */
-  .rodape--dark {
-    font-size: 1.2rem;
-    padding: 1.5rem 1rem;
-  }
-
-  .rodape--link--dark {
-    display: inline-block;
-    margin-top: 0.8rem;
-    padding: 8px 16px;
-  }
+@media screen and (max-width:500px){
+ .banner-jogo {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
 }
 
+.banner-jogo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 40%;
+  display: block;
+}
+}
 
+@media screen and (max-width: 500px) {
 
-
-
-
-
-@media (max-width: 768px) {
-  .banner-jogo {
-    height: 130px;
+  /* garante que nada ultrapasse a tela */
+  body {
+    overflow-x: hidden;
   }
+
+  /* textos respirarem melhor */
+  .container {
+    padding: 1rem 0.8rem;
+  }
+
+  /* imagens nunca passam da tela */
+  .demon--img {
+    max-width: 100%;
+    width: 250px; /* mantém seu tamanho original */
+  }
+
+  /* thumbnail do vídeo responsiva */
+  .video-thumb {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* lista deixa de ser horizontal no mobile */
+  .lista--demon {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .lista--demon li {
+    text-align: center;
+  }
+
 }
