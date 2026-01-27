@@ -3,19 +3,19 @@
 
 
 :root {
---primeira-cor: rgba(209, 10, 10, 0.904);
---segunda-cor: rgb(28, 32, 36);
---terceira-cor: rgb(18, 18, 19);
---cor-para-links:rgb(122, 6, 6);
---cor-para-links2:rgb(231, 41, 41);
---cor-para-links3:rgb(190, 56, 7);
---fonte-primeiro: "BBH Bartle", sans-serif ;
---fonte-segundo: "BBH Bogle", sans-serif ;
+  --primeira-cor: rgba(209, 10, 10, 0.904);
+  --segunda-cor: rgb(28, 32, 36);
+  --terceira-cor: rgb(18, 18, 19);
+  --cor-para-links: rgb(122, 6, 6);
+  --cor-para-links2: rgb(231, 41, 41);
+  --cor-para-links3: rgb(190, 56, 7);
+  --fonte-primeiro: "BBH Bartle", sans-serif;
+  --fonte-segundo: "BBH Bogle", sans-serif;
 }
 
 body {
-    background-color: rgb(28, 32, 36);
-    color: rgba(209, 10, 10, 0.904);
+  background-color: rgb(28, 32, 36);
+  color: rgba(209, 10, 10, 0.904);
 }
 
 .principal {
@@ -36,7 +36,7 @@ body {
   background-color: rgb(122, 6, 6);
   color: rgb(231, 41, 41);
   border-radius: 7px;
-  border: solid  rgb(190, 56, 7);
+  border: solid rgb(190, 56, 7);
   text-decoration: none;
   margin-right: 0;
   font-family: var(--fonte-segundo);
@@ -46,7 +46,7 @@ body {
   background-color: rgb(122, 6, 6);
   color: rgb(231, 41, 41);
   border-radius: 7px;
-  border: solid  rgb(190, 56, 7);
+  border: solid rgb(190, 56, 7);
   text-decoration: none;
   margin-right: 3.5em;
   margin-left: 0;
@@ -75,7 +75,7 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
-  
+
 }
 
 .card--link {
@@ -90,14 +90,15 @@ body {
   margin: auto;
   border: 3px solid rgb(190, 56, 7);
   border-radius: 7px;
-  width: 250px; /* opcional */
+  width: 250px;
+  /* opcional */
 }
 
 .card--link {
   background-color: rgb(122, 6, 6);
   color: rgb(231, 41, 41);
   border-radius: 5px;
-  border: solid  rgb(190, 56, 7);
+  border: solid rgb(190, 56, 7);
   text-decoration: none;
   margin-right: 0.5em;
   font-family: var(--fonte-segundo);
@@ -105,13 +106,13 @@ body {
 }
 
 .card--texto {
-  text-align: center;  
+  text-align: center;
   font-size: 1.5em;
   font-family: var(--fonte-segundo);
 }
 
 .rodape {
-  background-color:rgb(18, 18, 19);
+  background-color: rgb(18, 18, 19);
   color: rgba(209, 10, 10, 0.904);
   text-align: center;
   padding: 2em;
@@ -123,13 +124,13 @@ body {
   background-color: rgb(122, 6, 6);
   color: rgb(231, 41, 41);
   border-radius: 7px;
-  border: solid  rgb(190, 56, 7);
+  border: solid rgb(190, 56, 7);
   text-decoration: none;
   font-family: var(--fonte-segundo);
 }
 
-@media  screen and (max-width:500) {
-   .cabecalho {
+@media screen and (max-width:500) {
+  .cabecalho {
     flex-direction: column;
     gap: 1em;
   }
@@ -141,14 +142,14 @@ body {
   }
 
   .cabecalho--text2 {
-   margin-right: 5em;
+    margin-right: 5em;
 
   }
 
   .card--img {
     width: 70%;
   }
-  
+
   .rodape {
     text-align: center;
     display: block;
